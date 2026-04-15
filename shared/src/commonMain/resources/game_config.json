@@ -1,0 +1,149 @@
+{
+  "startNodeId": "start",
+  "endNodeId": "treasure",
+  "defaultStepsToNextChoice": 100,
+  "nodes": [
+    {
+      "id": "start",
+      "name": "Начало пути",
+      "description": "Вы стоите у ворот древнего королевства. Дорога ведёт вперёд.",
+      "isStart": true,
+      "choices": [
+        {
+          "id": "choice_start_1",
+          "text": "Пойти через лес",
+          "nextNodeId": "forest",
+          "stepsRequired": 100
+        },
+        {
+          "id": "choice_start_2",
+          "text": "Пойти вдоль реки",
+          "nextNodeId": "river",
+          "stepsRequired": 150
+        }
+      ]
+    },
+    {
+      "id": "forest",
+      "name": "Тёмный лес",
+      "description": "Густые деревья скрывают тайны. Слышен шёпот ветра.",
+      "choices": [
+        {
+          "id": "choice_forest_1",
+          "text": "Обойти гору",
+          "nextNodeId": "mountain_path",
+          "stepsRequired": 200
+        },
+        {
+          "id": "choice_forest_2",
+          "text": "Пойти в подземелье",
+          "nextNodeId": "dungeon",
+          "stepsRequired": 150
+        }
+      ]
+    },
+    {
+      "id": "river",
+      "name": "Берег реки",
+      "description": "Быстрое течение несёт воды к неизвестным землям.",
+      "choices": [
+        {
+          "id": "choice_river_1",
+          "text": "Перейти мост",
+          "nextNodeId": "bridge",
+          "stepsRequired": 100
+        },
+        {
+          "id": "choice_river_2",
+          "text": "Идти вдоль берега",
+          "nextNodeId": "cave",
+          "stepsRequired": 180
+        }
+      ]
+    },
+    {
+      "id": "mountain_path",
+      "name": "Горная тропа",
+      "description": "Крутой подъём открывает вид на долину.",
+      "choices": [
+        {
+          "id": "choice_mountain_1",
+          "text": "Подняться к вершине",
+          "nextNodeId": "peak",
+          "stepsRequired": 250
+        }
+      ]
+    },
+    {
+      "id": "dungeon",
+      "name": "Древнее подземелье",
+      "description": "Темные коридоры полны опасностей и сокровищ.",
+      "choices": [
+        {
+          "id": "choice_dungeon_1",
+          "text": "Искать выход",
+          "nextNodeId": "cave",
+          "stepsRequired": 120
+        }
+      ]
+    },
+    {
+      "id": "bridge",
+      "name": "Старый мост",
+      "description": "Скрипучий мост перекинут через пропасть.",
+      "choices": [
+        {
+          "id": "choice_bridge_1",
+          "text": "Перейти на другую сторону",
+          "nextNodeId": "castle",
+          "stepsRequired": 100
+        }
+      ]
+    },
+    {
+      "id": "cave",
+      "name": "Таинственная пещера",
+      "description": "В глубине пещеры мерцает свет.",
+      "choices": [
+        {
+          "id": "choice_cave_1",
+          "text": "Идти к свету",
+          "nextNodeId": "treasure",
+          "stepsRequired": 150
+        }
+      ]
+    },
+    {
+      "id": "peak",
+      "name": "Вершина горы",
+      "description": "С вершины виден весь путь. Внизу сияет цель.",
+      "choices": [
+        {
+          "id": "choice_peak_1",
+          "text": "Спуститься к сокровищу",
+          "nextNodeId": "treasure",
+          "stepsRequired": 200
+        }
+      ]
+    },
+    {
+      "id": "castle",
+      "name": "Заброшенный замок",
+      "description": "Стены замка хранят историю былых времён.",
+      "choices": [
+        {
+          "id": "choice_castle_1",
+          "text": "Найти тайный проход",
+          "nextNodeId": "treasure",
+          "stepsRequired": 180
+        }
+      ]
+    },
+    {
+      "id": "treasure",
+      "name": "Сокровище",
+      "description": "Вы нашли древнее сокровище! Поздравляем!",
+      "isEnd": true
+    }
+  ]
+}
