@@ -33,8 +33,8 @@ kotlin {
                 implementation(compose.material3)
                 implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
                 implementation("io.ktor:ktor-client-core:2.3.6")
-                implementation("app.cash.sqldelight:coroutines-extensions:2.0.1")
-                implementation("app.cash.sqldelight:primitive-adapters:2.0.1")
+                implementation("app.cash.sqldelight:coroutines-extensions:2.0.2")
+                implementation("app.cash.sqldelight:primitive-adapters:2.0.2")
                 implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.5.0")
                 implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.0")
             }
@@ -60,7 +60,7 @@ kotlin {
             iosSimulatorArm64Main.dependsOn(this)
             
             dependencies {
-                implementation("app.cash.sqldelight:native-driver:2.0.1")
+                implementation("app.cash.sqldelight:native-driver:2.0.2")
             }
         }
     }
