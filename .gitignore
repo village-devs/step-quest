@@ -1,0 +1,80 @@
+```
+# Kotlin/Multiplatform build artifacts
+*.class
+*.jar
+*.war
+*.ear
+*.klib
+*.kotlin_metadata
+
+# Gradle
+.gradle/
+build/
+!gradle-wrapper.jar
+
+# Android
+*.apk
+*.aab
+local.properties
+captures/
+.externalNativeBuild
+.intermediates
+.kotlin
+outputs/
+
+# iOS
+*.ipa
+*.dSYM
+*.xcassets
+*.xcodeproj/
+*.xcworkspace/
+*.swiftmodule
+DerivedData/
+
+# Multiplatform shared module
+shared/build/
+shared/.gradle/
+
+# General build artifacts
+*.o
+*.obj
+*.so
+*.dll
+*.dylib
+*.exe
+*.out
+
+# Dependencies
+node_modules/
+vendor/bundle/
+.libs/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Environment
+.env
+.env.local
+.env.*
+
+# Coverage
+coverage/
+htmlcov/
+.coverage
+
+# Temporary files
+*.tmp
+*~
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+```
